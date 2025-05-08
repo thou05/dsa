@@ -5,6 +5,23 @@ QUY HOẠCH ĐỘNG
 
 Phương pháp giải các bài toán cần đưa ra lần lượt một loạt các quyết định tối ưu
 
+```TXN
+TOP-DOWN
+	- nhìn theo hướng từ trên xuống
+	- chia bài toán lớn thành các bài nhỏ
+	- chia để trị là 1 dạng của tư duy này
+	- (có tầm nhìn xa)
+BOTTOM-UP
+	- Nhìn từ dưới lên
+	- Giai bài toán nhỏ trước
+	- Tổ hợp các lời giải nhỏ -> giải toán lớn
+	- (cứ đi rồi sẽ đến, làm tốt nhất trước mắt đã)
+QUY HOẠCH ĐỘNG
+	- Là 1 dạng của bottom-up
+	- Dùng cho các bài toán tối ưu
+	- Nguyên tắc: lời giải tối ưu của bài toán lớn sử dụng KQ tối ưu của bài toán con
+```
+
 ### Ba tính chất
 - Recursive form 
 	Bài toán lớn có thể được phân rã thành những bài toán con đồng dạng, những bài toán con đó có thể phân rã thành những bài toán nhỏ hơn nữa …
