@@ -34,11 +34,13 @@ Note
 		- $C_1$ : thời gian sắp xếp danh sác có độ dài 1
 		- Với n>1, chia danh sách gồm 2 nửa và trộn -> tổn thời gian: $C_2n$ 
 		- Phương trình đệ quy: $T(n) = \begin{cases} C_1 &\text{if } n = 1 \\ 2T(n/2) + C_2n &\text{if } n > 1 \end{cases}$
+			![Recurrence Relation](https://latex.codecogs.com/svg.latex?T(n)%20=%20\begin{cases}%20C_1%20&\text{if%20}%20n%20=%201\\%202T(n/2)%20+%20C_2n%20&\text{if%20}%20n%20>%201%20\end{cases})
 ### Giải phương trình đệ quy
 #### Phương pháp truy hồi
 - Dùng đệ quy để thay thế bất kỳ T(m) với m<n vào phía phải của pt cho đến khi tất cả T(m) với m > 1 được thay thế bởi biểu thức của các T(1)
 - T(1) luôn là hằng -> công thức của T(n) chứa các số hạng chỉ liên quan đến n và các hằng số
 - Giải phương trình đệ quy: $T(n) = \begin{cases} C_1 &\text{if } n = 1 \\ 2T(n/2) + C_2n &\text{if } n > 1 \end{cases}$
+	![Recurrence Relation](https://latex.codecogs.com/svg.latex?T(n)%20=%20\begin{cases}%20C_1%20&\text{if%20}%20n%20=%201\\%202T(n/2)%20+%20C_2n%20&\text{if%20}%20n%20>%201%20\end{cases})
 	Ta có:
 	$T(n) = 2T(\frac{n}{2}) + C_2n$ 
 	$T(n) = 2(2T(\frac{n}{4}) + C_2\frac{n}{2}) + C_2n = 4T(\frac{n}{4}) + 2C_2n$ 
@@ -66,11 +68,11 @@ Dùng chứng minh quy nhạp để chứng tỏ rằng T(n) <= f(n) với mọi
 	Ta có pt đệ quy: $\begin{cases} T(1) = 1 \\ T(n) = aT(\frac{n}{b}) + d(n) \end{cases}$  `(1)`
 		hàm thời gian `d(n)` dgl hàm tiến triển
 	
-	Sử dụng pp truy hồi giải pt
-	$T(n) = aT(\frac{n}{b}) + d(n)$ 
-	$T(n) = a[aT(n/b^2) + d(n/b)] + d(n)$ 
+	Sử dụng pp truy hồi giải pt 
+	- $T(n) = aT(\frac{n}{b}) + d(n)$ 
+	- $T(n) = a[aT(n/b^2) + d(n/b)] + d(n)$ 
 		$= a^2T(n/b^2) + ad(n/b) + d(n)$  
-	$T(n) = a^2[aT(n/b^3) + d(n/b^2)] + ad(n/b) + d(n)$
+	- $T(n) = a^2[aT(n/b^3) + d(n/b^2)] + ad(n/b) + d(n)$
 		$= a^3T(n/b^3) + a^2d(n/b^2) + ad(n/b) + d(n)$ 
 		= ...
 		$= a^iT(n/b^i) + 	\textstyle\sum_{i=0}^{i-1}a^id(n/b^i)$ 
