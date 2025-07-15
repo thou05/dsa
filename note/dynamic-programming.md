@@ -22,6 +22,26 @@ QUY HOẠCH ĐỘNG
 	- Nguyên tắc: lời giải tối ưu của bài toán lớn sử dụng KQ tối ưu của bài toán con
 ```
 
+```
+BÀI TOÁN ĐOẠN CON LỚN NHẤT
+Cho dãy A = (a[1], a[2], ... , a[n-1], a[n]), tìm đoạn con (dãy con liên tiếp) trong A có tổng các phần tử là lớn nhất
+```
+
+```
+BÀI TOÁN DÃY CON CHUNG DÀI NHẤT
+Longest common subsequence (LCS)
+
+Ứng dụng: check đạo văn, check gen ADN bla bla
+
+PP: có thể dùng chia để trị
+
+
+```
+
+```
+BÀI TOÁN CÁI BA LÔ
+
+```
 ### Ba tính chất
 - Recursive form 
 	Bài toán lớn có thể được phân rã thành những bài toán con đồng dạng, những bài toán con đó có thể phân rã thành những bài toán nhỏ hơn nữa …
@@ -87,6 +107,16 @@ Cách 2: tối ưu hơn
 }
 ```
 
+## Bài toán
+```tphong
+TÍNH TỔ HỢP
+DÃY FIBONACCI
+SUBSET SUM
+BÀI TOÁN CÁI BA LÔ
+DÃY CON TĂNG DÀI NHẤT
+ĐỔI TIỀN
+CHIA KẸO
+```
 
 -----
 ## References
